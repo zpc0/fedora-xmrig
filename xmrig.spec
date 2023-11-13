@@ -11,6 +11,7 @@ Source0:	https://github.com/%{name}/%{name}/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:	gcc
+BuildRequires:	gcc-c++
 BuildRequires:	hwloc-devel
 BuildRequires:	libstdc++-static
 BuildRequires:	libuv-static
