@@ -28,7 +28,7 @@ unified CPU/GPU miner
 
 %prep
 %setup -q
-%patch0
+%patch 0
 %cmake
 
 %build
