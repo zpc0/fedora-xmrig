@@ -1,5 +1,8 @@
 %global debug_package %{nil}
 
+# prevent buffer overflow error
+%define _fortify_level 2
+
 Name:		xmrig
 Version:	6.20.0
 Release:	1%{?dist}
