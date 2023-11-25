@@ -4,8 +4,8 @@
 %define _fortify_level 2
 
 Name:		xmrig
-Version:	6.20.0
-Release:	2%{?dist}
+Version:	6.21.0
+Release:	1%{?dist}
 Summary:	unified CPU/GPU miner
 
 License:	GPLv3
@@ -44,6 +44,7 @@ install -m 0755 %{__cmake_builddir}/xmrig %{buildroot}%{_bindir}/xmrig
 
 %changelog
 * Sat Nov 25 2023 zpc <dev@zpc.st>
+- v6.21.0 release
 - set fortify level 2 to prevent buffer overflow error.
 - disable automatic donation by default.
 
