@@ -4,7 +4,7 @@
 %define _fortify_level 2
 
 Name:		xmrig
-Version:	6.21.0
+Version:	6.21.1
 Release:	1%{?dist}
 Summary:	unified CPU/GPU miner
 
@@ -43,6 +43,9 @@ install -m 0755 %{__cmake_builddir}/xmrig %{buildroot}%{_bindir}/xmrig
 %{_bindir}/xmrig
 
 %changelog
+* Wed Feb 28 2024 zpc <dev@zpc.st>
+- v6.21.1 release
+
 * Sat Nov 25 2023 zpc <dev@zpc.st>
 - v6.21.0 release
 - set fortify level 2 to prevent buffer overflow error.
