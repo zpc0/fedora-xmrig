@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:		xmrig
-Version:	6.21.2
+Version:	6.21.3
 Release:	1%{?dist}
 Summary:	unified CPU/GPU miner
 
@@ -40,6 +40,8 @@ install -m 0755 %{__cmake_builddir}/xmrig %{buildroot}%{_bindir}/xmrig
 %{_bindir}/xmrig
 
 %changelog
+* Tue May 21 2024 zpc <dev@zpc.st>
+- v6.21.3 release
 * Tue Mar 26 2024 zpc <dev@zpc.st>
 - v6.21.2 release
 * Wed Feb 28 2024 zpc <dev@zpc.st>
