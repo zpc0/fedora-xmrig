@@ -5,7 +5,7 @@ Version:	6.21.3
 Release:	1%{?dist}
 Summary:	unified CPU/GPU miner
 
-License:	GPLv3
+License:	GPL-3.0-or-later
 URL:		https://xmrig.com
 Source0:	https://github.com/%{name}/%{name}/archive/refs/tags/v%{version}.tar.gz
 
