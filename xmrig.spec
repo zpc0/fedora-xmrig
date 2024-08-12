@@ -3,7 +3,7 @@
 
 Name:		xmrig
 Version:	6.21.3
-Release:	1%{?dist}
+Release:	%autorelease
 Summary:	unified CPU/GPU miner
 
 License:	GPL-3.0-or-later
@@ -41,15 +41,4 @@ install -m 0755 %{__cmake_builddir}/xmrig %{buildroot}%{_bindir}/xmrig
 %{_bindir}/xmrig
 
 %changelog
-* Tue May 21 2024 zpc <dev@zpc.st>
-- v6.21.3 release
-* Tue Mar 26 2024 zpc <dev@zpc.st>
-- v6.21.2 release
-* Wed Feb 28 2024 zpc <dev@zpc.st>
-- v6.21.1 release
-* Sat Nov 25 2023 zpc <dev@zpc.st>
-- v6.21.0 release
-- set fortify level 2 to prevent buffer overflow error.
-- disable automatic donation by default.
-* Sat Nov 11 2023 zpc <dev@zpc.st>
-- initial release.
+%autochangelog
