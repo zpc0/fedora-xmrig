@@ -3,7 +3,7 @@
 
 Name:		xmrig
 Version:	6.22.0
-Release:	%autorelease
+Release:	1%{?dist}
 Summary:	unified CPU/GPU miner
 
 License:	GPL-3.0-or-later
