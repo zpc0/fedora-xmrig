@@ -3,7 +3,7 @@
 
 Name:		xmrig
 Version:	6.22.2
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	unified CPU/GPU miner
 
 License:	GPL-3.0-or-later
@@ -26,7 +26,8 @@ XMRig is a high performance, open source, cross platform
 unified CPU/GPU miner
 
 %prep
-%autosetup
+%setup -q
+%patch 0
 
 %build
 %cmake -G Ninja -DWITH_HTTP=OFF -DWITH_MSR=OFF -DWITH_ENV_VARS=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF
