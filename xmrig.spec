@@ -25,16 +25,15 @@ XMRig is a high performance, open source, cross platform
 unified CPU/GPU miner
 
 %prep
-%setup -q
-%patch 0
-%cmake
+%autosetup
 
 %build
+%cmake
 %cmake_build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-install -m 0755 %{__cmake_builddir}/xmrig %{buildroot}%{_bindir}/xmrig
+install -m 0755 %{_vpath_builddir}/xmrig %{buildroot}%{_bindir}/xmrig
 
 %files
 %license LICENSE
