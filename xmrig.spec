@@ -13,6 +13,7 @@ Source0:	https://github.com/%{name}/%{name}/archive/refs/tags/v%{version}.tar.gz
 Patch0:		disable-auto-donate.patch
 
 BuildRequires:	cmake
+BuildRequires:	ninja-build
 BuildRequires:	gcc
 BuildRequires:	gcc-c++
 BuildRequires:	hwloc-devel
@@ -28,7 +29,7 @@ unified CPU/GPU miner
 %autosetup
 
 %build
-%cmake
+%cmake -G Ninja
 %cmake_build
 
 %install
