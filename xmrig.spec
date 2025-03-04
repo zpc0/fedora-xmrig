@@ -3,7 +3,7 @@
 
 Name:		xmrig
 Version:	6.22.2
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	unified CPU/GPU miner
 
 License:	GPL-3.0-or-later
@@ -29,7 +29,7 @@ unified CPU/GPU miner
 %autosetup
 
 %build
-%cmake -G Ninja
+%cmake -G Ninja -DWITH_HTTP=OFF -DWITH_MSR=OFF -DWITH_ENV_VARS=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF
 %cmake_build
 
 %install
