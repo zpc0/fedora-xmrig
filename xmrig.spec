@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:		xmrig
-Version:	6.22.3
+Version:	6.24.0
 Release:	1%{?dist}
 Summary:	unified CPU/GPU miner
 
